@@ -1,7 +1,7 @@
 Kurulum
 ========================
 <pre>
-git clone 
+git clone git@github.com:phpistorg/etkinlik-2013.git
 </pre>
 
 ile depoyu çekip, virtual host tanımlamalarını yapın. Daha sonra
