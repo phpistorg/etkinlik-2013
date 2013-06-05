@@ -1,0 +1,55 @@
+footer {
+    position: relative;
+}
+
+footer .toCenter {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+}
+
+
+footer #sdLogo {
+    opacity: 0.6;
+    display: inline-block;
+    width: 69px;
+    height: 30px;
+    background-position: -586px -569px;
+    position: relative;
+    top: 10px;
+}
+
+
+footer small {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    line-height: 30px;
+    font-size: inherit;
+}
+
+footer #designer {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    line-height: 30px;
+    font-size: inherit;
+}
+
+footer #designer a{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: inherit;
+}
+
+
+footer span {
+    width: 88px;
+    height: 96px;
+    display: block;
+    position: absolute;
+    top: -110px;
+    right: 0;
+    background-position: -966px -1367px;
+}

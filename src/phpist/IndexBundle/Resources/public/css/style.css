@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+}
+
+#contentAboveFooter {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -51px; 
+}
+
+#fakeFooter {
+    height: 51px;
+}
+
+footer {
+    height: 49px;
+    background: #0081b6;
+    border-top: 1px solid #7fc0da;
+    border-bottom: 1px solid #7fc0da;
+}
+
+.toCenter {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.sprite {
+    background-image: url('../img/sprite.png');
+}
+
+
+
+.ir {
+    display: block; 
+    border: 0; 
+    text-indent: -999em; 
+    overflow: hidden; 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    text-align: left; 
+    direction: ltr; 
+}
+.ir br { 
+    display: none; 
+}

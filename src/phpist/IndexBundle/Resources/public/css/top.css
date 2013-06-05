@@ -1,0 +1,46 @@
+#top {
+    background: #f6f6f6;
+}
+
+#top .topLine {
+    height: 20px;
+    background-position: 0 -157px;
+    background-repeat: repeat-x;
+}
+
+#top .slide {
+    height: 320px;
+    background-position: 0 -193px;
+    background-repeat: no-repeat;
+} 
+
+#top .followUs {
+    background: #00a1de;
+    height: 50px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+#top .followUs a{
+    display: inline-block;
+    width: 40px; 
+    height: 30px;
+    position: relative;
+    top: 12px;
+    margin: 0 10px 0 5px;
+}
+
+
+#top .followUs a.twitter{
+    background-position: -694px -566px;
+}
+
+#top .followUs a.facebook{
+    background-position: -766px -566px;
+}
+
+#top .followUs a.github{
+    background-position: -734px -566px;
+}

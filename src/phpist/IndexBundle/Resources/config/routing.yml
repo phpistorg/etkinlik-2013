@@ -1,0 +1,7 @@
+phpist_index_homepage:
+    pattern:  /
+    defaults: { _controller: phpistIndexBundle:Default:index }
+
+phpist_index_homepage_eng:
+    pattern:  /en
+    defaults: { _controller: phpistIndexBundle:Default:index, _locale: en }

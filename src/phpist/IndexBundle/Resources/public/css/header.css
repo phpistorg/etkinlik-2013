@@ -1,0 +1,40 @@
+header {
+    position: relative;
+}
+
+
+#logo {
+    display: block;
+    width: 217px;
+    height: 90px;
+    background-position: -143px -62px;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+header nav .home {
+    width: 25px;
+    background-position: -627px -72px;
+}
+
+
+header nav a {
+    display: block;
+    float: left;
+    border-top: 12px solid #FFFFFF;
+    line-height: 70px;
+    margin-left: 28px;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+header nav a.active {
+    border-top: 12px solid #00a1de;
+}

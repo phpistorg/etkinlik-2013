@@ -1,0 +1,4 @@
+phpist_index:
+    resource: "@phpistIndexBundle/Resources/config/routing.yml"
+    prefix:   /
+

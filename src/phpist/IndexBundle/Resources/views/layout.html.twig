@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{% trans %}page.title{% endtrans %}</title>
+        <meta name="keywords" content="php konferans" >
+        <meta name="description" content="açıklama" >        
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/phpistindex/img/favicon.png') }}" />
+        <link rel="icon" type="image/png" href="{{ asset('bundles/phpistindex/img/favicon.png') }}">
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/external/html5shiv.js') }}"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/reset.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/style.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/header.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/top.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/content.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/button.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/footer.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/xxresponsive.css') }}" type="text/css" />
+
+        <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/external/jquery-1.8.3.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/script.js') }}"></script>
+    </head>
+    <body data-modules="aboutUs">
+        <div id="contentAboveFooter">
+            <div id="header">
+                <header class="toCenter">
+                    <a href="#" id="logo" class="sprite ir" title="PHP-IST">Logo</a> 
+                    <nav>
+                        <a href="#" class="sprite active home ir">Ana Sayfa</a>
+                        <a href="#">Program</a>
+                        <a href="#">Konuşmacılar</a>
+                        <a href="#">Sponsorlar</a>
+                        <a href="#">Ulaşım</a>
+                    </nav>
+                </header>
+            </div> <!-- #header -->
+
+            <div id="top">
+                <div class="topLine sprite"></div>
+                <div class="slide sprite">
+                    <div class="text toCenter">
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        Lorem ipsum falan filan <br/>
+                        <a href="#" class="redButton" id="registerredButton">Hemen Kaydol</a>
+                    </div>
+
+                    <img src="#" id="elephant"/>
+                </div> <!-- .slide -->
+                <div class="followUs">
+                    Gelişmeler için bizi takip edin! 
+                    <a href="#" class="ir sprite twitter">Twitter</a> 
+                    <a href="#" class="ir sprite facebook">Facebook</a> 
+                    <a href="#" class="ir sprite github">Github</a> 
+                </div> <!-- .followUs -->
+            </div> <!-- #top -->
+
+
+            {% block body %}{% endblock %}
+
+
+            <div id="fakeFooter"></div>
+        </div> <!-- #contentAboveFooter -->
+
+        <footer>
+            <span id="mascot" class="sprite ir">Maskot</span>
+            <div class="toCenter">
+                <small>PHP-IST Konferansı 2013</small>
+
+                <a href="#" id="sdLogo" class="sprite ir">Sonsuzdöngü - Kod Yeniçerileri</a>
+
+                <div id="designer">
+                    Designer <a href="#">Ethem Budak</a>
+                </div>
+            </div> <!-- .toCenter -->
+        </footer>
+    </body>
+</html>
