@@ -8,4 +8,6 @@
 /bin/
 /composer.phar
 *.swp
+*.swo
+*.swn
 .idea/

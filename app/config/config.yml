@@ -24,6 +24,8 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
+    exception_controller: phpist\IndexBundle\Controller\DefaultController::errorAction
+
 
 # Assetic Configuration
 assetic:
