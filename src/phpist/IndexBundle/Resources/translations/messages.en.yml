@@ -1,9 +1,9 @@
-page.title : php-ist: Istanbul PHP Conferance
-nav.home : Home
-nav.program : Program
-nav.speakers : Speakers
-nav.sponsors : Sponsors
-nav.venue : Venue
-top.followUs : Follow us for featured news
-footer.info : php-ist Conf 2013
-footer.designer : Designer: %link%
+page.title: 'php-ist: Istanbul PHP Conferance'
+nav.home: 'Home'
+nav.program: 'Program'
+nav.speakers: 'Speakers'
+nav.sponsors: 'Sponsors'
+nav.venue: 'Venue'
+top.followUs: 'Follow us for featured news'
+footer.info: 'php-ist Conf 2013'
+footer.designer: 'Designer: %link%'
