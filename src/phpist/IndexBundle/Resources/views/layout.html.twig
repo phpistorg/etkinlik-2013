@@ -30,11 +30,11 @@
                 <header class="toCenter">
                     <a href="#" id="logo" class="sprite ir" title="PHP-IST">Logo</a> 
                     <nav>
-                        <a href="#" class="sprite active home ir">Ana Sayfa</a>
-                        <a href="#">Program</a>
-                        <a href="#">Konuşmacılar</a>
-                        <a href="#">Sponsorlar</a>
-                        <a href="#">Ulaşım</a>
+                        <a href="#" class="sprite active home ir">{% trans %}nav.home{% endtrans %}</a>
+                        <a href="#">{% trans %}nav.speakers{% endtrans %}</a>
+                        <a href="#">{% trans %}nav.program {%endtrans %}</a>
+                        <a href="#">{% trans %}nav.sponsors{% endtrans %}</a>
+                        <a href="#">{% trans %}nav.venue{% endtrans %}</a>
                     </nav>
                 </header>
             </div> <!-- #header -->
@@ -43,19 +43,16 @@
 
             {% block body %}{% endblock %}
 
-
             <div id="fakeFooter"></div>
         </div> <!-- #contentAboveFooter -->
 
         <footer>
             <span id="mascot" class="sprite ir">Maskot</span>
             <div class="toCenter">
-                <small>PHP-IST Konferansı 2013</small>
-
-                <a href="#" id="sdLogo" class="sprite ir">Sonsuzdöngü - Kod Yeniçerileri</a>
+                <small>{% trans %}footer.info{% endtrans %}</small>
 
                 <div id="designer">
-                    Designer <a href="#">Ethem Budak</a>
+                    {% trans with {'%link%':'<a href="#">Ethem Budak</a>'} %}footer.designer{% endtrans %}
                 </div>
             </div> <!-- .toCenter -->
         </footer>
