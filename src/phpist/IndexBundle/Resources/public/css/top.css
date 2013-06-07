@@ -80,5 +80,23 @@
 }
 #registerRedButton {
     position: relative;
-    top: 50px;
+    top: 15px;
 }
+
+#top .ircLink a,
+#top .contactMail a{
+    margin: 5px;
+    text-decoration: none;
+    color: #0082b4;
+    display: inline-block;
+}
+
+#top .ircLink a:hover,
+#top .contactMail a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
