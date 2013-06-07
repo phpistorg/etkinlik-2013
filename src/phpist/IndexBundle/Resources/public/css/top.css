@@ -70,8 +70,13 @@
     top: 70px;
     width: 500px;
     text-align: center;
+    color: #8E8B8B;
 }
 
+#top .text #info p {
+    font-family: Tahoma;
+    font-size: 14px;
+}
 #registerRedButton {
     position: relative;
     top: 50px;
