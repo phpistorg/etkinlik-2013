@@ -26,6 +26,8 @@
 
 {% block body %}
 
+
+
     <div id="sponsors" class="toCenter">
         <h2 class="sprite"><span>{% trans %}Sponsors{% endtrans %}</span></h2>
         <ul>
@@ -36,7 +38,12 @@
                 <a href="http://sonsuzdongu.com" target="_blank"><img src="{{ asset('bundles/phpistindex/img/sponsors/sonsuzdongu.png') }}" alt="Sonsuzdöngü"/></a>
             </li>
             <li>
+                
+                {% if app.request.locale == "tr" %}
                 <a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}"><img src="{{ asset('bundles/phpistindex/img/plus.png') }}" alt="Sponsor Olun"/></a>
+                {% else %}
+                <a href="{{ asset('bundles/phpistindex/data/sponsorship.pdf') }}"><img src="{{ asset('bundles/phpistindex/img/plus_en.png') }}" alt="Become a sponsor"/></a>
+                {% endif %}
             </li>
         </ul>
         <!--<a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}" class="redButton" id="howToSponsor">{% trans %}Become a Sponsor{% endtrans %}</a>-->
@@ -113,7 +120,7 @@
                         <a class="ir sprite github" href="https://github.com/turkerince" target="_blank">Github</a>
                         <a class="ir sprite twitter" href="https://twitter.com/turkerince" target="_blank">Twitter</a>
                         <a class="ir sprite web" href="https://www.facebook.com/trkrnc" target="_blank">Web</a>
-                    <div>
+                    </div>
                 </figure>
                 <em>Limango</em>
                 <strong>Türker İnce</strong>
@@ -127,7 +134,7 @@
                         <a class="ir sprite github" href="https://github.com/ibrahimgunduz34" target="_blank">Github</a>
                         <a class="ir sprite twitter" href="https://twitter.com/ibrahimgunduz34" target="_blank">Twitter</a>
                         <a class="ir sprite web" href="http://ibrahimgunduz.net/" target="_blank">Web</a>
-                    <div>
+                    </div>
                 </figure>
                 <em>Markafoni</em>
                 <strong>İbrahim Gündüz</strong>
@@ -142,7 +149,7 @@
                         <a class="ir sprite github" href="https://github.com/import" target="_blank">Github</a>
                         <a class="ir sprite twitter" href="https://twitter.com/osmanungur" target="_blank">Twitter</a>
                         <a class="ir sprite web" href="http://osman.ungur.org/" target="_blank">Web</a>
-                    <div>
+                    </div>
                 </figure>
                 <em>Limango</em>
                 <strong>Osman Üngür</strong>
@@ -156,7 +163,7 @@
                         <a class="ir sprite github" href="https://github.com/mustafaileri" target="_blank">Github</a>
                         <a class="ir sprite twitter" href="https://twitter.com/mustafaileri" target="_blank">Twitter</a>
                         <a class="ir sprite web" href="http://sonsuzdongu.com/blog" target="_blank">Web</a>
-                    <div>
+                    </div>
                 </figure>
                 <em>Sonsuzdöngü</em>
                 <strong>Mustafa İleri</strong>
@@ -171,7 +178,7 @@
                         <a class="ir sprite github" href="https://github.com/hmert" target="_blank">Github</a>
                         <a class="ir sprite twitter" href="https://twitter.com/hmert" target="_blank">Twitter</a>
                         <a class="ir sprite web" href="http://hmert.com/" target="_blank">Web</a>
-                    <div>
+                    </div>
                 </figure>
                 <em>Eğitim Bilişim Ağı</em>
                 <strong>Hüseyin Mert</strong>
