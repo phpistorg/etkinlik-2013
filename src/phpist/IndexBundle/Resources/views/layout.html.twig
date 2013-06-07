@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="{{ asset('bundles/phpistindex/css/xxresponsive.css') }}" type="text/css" />
 
         <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/external/jquery-1.8.3.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/external/jquery.scrollTo-1.4.3.1-min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/external/jquery.history.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/phpistindex/js/script.js') }}"></script>
     </head>
     <body data-modules="aboutUs">
@@ -33,11 +35,11 @@
                 <header class="toCenter">
                     <a href="#" id="logo" class="sprite ir" title="PHP-IST">Logo</a> 
                     <nav>
-                        <a href="#" class="sprite active home ir">{% trans %}nav.home{% endtrans %}</a>
-                        <a href="#">{% trans %}nav.speakers{% endtrans %}</a>
-                        <a href="#">{% trans %}nav.program {%endtrans %}</a>
-                        <a href="#">{% trans %}nav.sponsors{% endtrans %}</a>
-                        <a href="#">{% trans %}nav.venue{% endtrans %}</a>
+                        <a href="#!/" class="sprite home ir">{% trans %}nav.home{% endtrans %}</a>
+                        <a href="#!/speakers" class="speakers">{% trans %}nav.speakers{% endtrans %}</a>
+                        <a href="#!/program" class="program">{% trans %}nav.program {%endtrans %}</a>
+                        <a href="#!/sponsors" class="sponsors">{% trans %}nav.sponsors{% endtrans %}</a>
+                        <a href="#!/venue" class="venue">{% trans %}nav.venue{% endtrans %}</a>
                     </nav>
                 </header>
             </div> <!-- #header -->

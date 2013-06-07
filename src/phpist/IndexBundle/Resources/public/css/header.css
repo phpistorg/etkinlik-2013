@@ -20,6 +20,7 @@ header nav {
 header nav .home {
     width: 25px;
     background-position: -627px -72px;
+    border-top: 12px solid #FFFFFF;
 }
 
 
@@ -46,4 +47,5 @@ header nav a:hover {
 
 header nav a.active {
     border-top: 12px solid #00a1de;
+    color: #00a1de;
 }
