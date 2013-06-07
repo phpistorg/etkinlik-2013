@@ -7,8 +7,8 @@
         <div class="slide sprite">
             <div class="text toCenter">
                 <div id="info">
-                    <h1>{% trans %}PHP KONFERANSI{% endtrans %}</h1>
-                    <h3>{% trans %}6 TEMMUZ - YILDIZ TEKNİK ÜNİVERSİTESİ{% endtrans %}</h3>
+                    <h1>{% trans %}PHP CONFERENCE{% endtrans %}</h1>
+                    <h3>{% trans %}JULY 6th - YILDIZ TECHNICAL UNIVERSITY{% endtrans %}</h3>
                     <p>{% trans %}slide.main{% endtrans %}</p>
                     <a href="http://phpist.eventbrite.com/" target="_blank" class="redButton" id="registerRedButton">{% trans %}Register Now{% endtrans %}</a>
                 </div>
@@ -25,6 +25,23 @@
 {% endblock %}
 
 {% block body %}
+
+    <div id="sponsors" class="toCenter">
+        <h2 class="sprite"><span>{% trans %}Sponsors{% endtrans %}</span></h2>
+        <ul>
+            <li>
+               <a href="http://bmo.org.tr" target="_blank"><img src="{{ asset('bundles/phpistindex/img/sponsors/bmo.jpg') }}" alt="Bilgisyar Mühendisleri Odası"/></a>
+            </li>
+            <li>
+                <a href="http://sonsuzdongu.com" target="_blank"><img src="{{ asset('bundles/phpistindex/img/sponsors/sonsuzdongu.png') }}" alt="Sonsuzdöngü"/></a>
+            </li>
+            <li>
+                <a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}"><img src="{{ asset('bundles/phpistindex/img/plus.png') }}" alt="Sponsor Olun"/></a>
+            </li>
+        </ul>
+        <!--<a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}" class="redButton" id="howToSponsor">{% trans %}Become a Sponsor{% endtrans %}</a>-->
+    </div> <!-- #sponsors -->
+
     <div id="program" class="toCenter">
         <h2 class="sprite"><span>{% trans %}Schedule{% endtrans %}</span></h2>
 
@@ -161,13 +178,6 @@
             </li>
         </ul>
     </div> <!-- #speakers -->
-
-
-    <div id="sponsors" class="toCenter">
-        <h2 class="sprite"><span>{% trans %}Sponsors{% endtrans %}</span></h2>
-
-        <a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}" class="redButton" id="howToSponsor">{% trans %}Become a Sponsor{% endtrans %}</a>
-    </div> <!-- #sponsors -->
 
     <div id="contact" class="toCenter">
         <h2 class="sprite"><span>{% trans %}Venue{% endtrans %}</span></h2>
