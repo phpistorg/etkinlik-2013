@@ -1,4 +1,4 @@
-body { background: blue; }
+body {}
 
 
 /** 960 - 1120 */
@@ -9,13 +9,18 @@ body { background: blue; }
 
     footer small { left: 5px;}
     footer #designer { right: 5px;}
+
+
+    header nav {
+        padding-right: 10px;
+    }
+
 }
 
 
 
 /* 768 - 960 */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    body { background: red; }
     .toCenter {
         width: auto;
         max-width: 980px;
@@ -28,13 +33,46 @@ body { background: blue; }
     footer small { left: 5px;}
     footer #designer { right: 5px;}
 
+    #program ul {
+        width: 500px;
+        margin: 0 auto;
+    }
 
+
+    #program ul li.lunch {
+        width: 435px;
+    }
+
+    #speakers ul {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #sponsors ul {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+
+
+    #program ul li.lunch small {
+        left: 70px;
+    }
+
+
+    #program ul li.lunch h4 {
+        left: 240px;
+    }
+
+    header nav {
+        padding-right: 10px;
+    }
 }
 
 
 /* 0 - 480 */
 @media only screen and (max-width: 767px) {
-    body { background: green; }
+    body {}
     .toCenter {
         width: auto;
         max-width: 480px;
@@ -43,6 +81,64 @@ body { background: blue; }
     #mascot {
         display: none;
     }
+
+    #program ul {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+
+    #program ul li.lunch {
+        width: 435px;
+    }
+
+    #speakers ul {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #sponsors ul {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+
+
+    #program ul li.lunch small {
+        left: 70px;
+    }
+
+
+    #program ul li.lunch h4 {
+        left: 240px;
+    }
+
+     #header {
+        height: 200px;
+    }
+
+
+    #header nav {
+        top: 30px;
+        position: relative;
+    }
+
+    #top {
+        height: 890px;
+    }
+
+
+    #top .text #elephant {
+        top: 450px;
+        left: 0;
+    }
+
+
+    #top .text #info {
+        left: 0;
+    }
+
+
 
     footer small { left: 5px;}
     footer #designer { right: 5px;}
@@ -55,7 +151,7 @@ body { background: blue; }
 
 /* 480 - 768 */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    body { background: yellow; }
+    body {}
     .toCenter {
         width: auto;
         max-width: 768px;
@@ -63,6 +159,32 @@ body { background: blue; }
 
     #mascot {
         display: none;
+    }
+
+
+    #header {
+        height: 200px;
+    }
+
+
+    #header nav {
+        top: 30px;
+        position: relative;
+    }
+
+    #top {
+        height: 890px;
+    }
+
+
+    #top .text #elephant {
+        top: 450px;
+        left: 20%;
+    }
+
+
+    #top .text #info {
+        left: 10%;
     }
 
     footer small { left: 5px;}
