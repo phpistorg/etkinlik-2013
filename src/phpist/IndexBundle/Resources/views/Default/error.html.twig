@@ -1,5 +1,7 @@
 {% extends "phpistIndexBundle::layout.html.twig" %}
 
 {% block body %}
-    ERROR olustu!!! {{ statusCode }}
+    <div class="toCenter notFound">
+        <img src="{{ asset('bundles/phpistindex/img/404.png') }}" alt="Sayfa Bulunamadı"/>
+    </div>
 {% endblock %}

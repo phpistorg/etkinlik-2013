@@ -44,3 +44,7 @@ footer {
 .ir br { 
     display: none; 
 }
+
+.notFound {
+    text-align: center;
+}
