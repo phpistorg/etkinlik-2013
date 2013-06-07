@@ -5,5 +5,13 @@ nav.speakers: 'Speakers'
 nav.sponsors: 'Sponsors'
 nav.venue: 'Venue'
 top.followUs: 'Follow us for featured news'
-footer.info: 'php-ist Conf 2013'
+footer.info: 'php-ist 2013'
 footer.designer: 'Designer: %link%'
+slide.main: >
+    We are going to talk about 'cuting edge' PHP technologies and willing to see you around.
+Schedule: 'Program'
+Opening Speech: Opening Speech
+PHP Success Stories: Büyük Kamu Projelerinde PHP Kullanımı
+Sponsors: Sponsors
+Speakers: Speakers
+Venue: Venue

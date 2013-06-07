@@ -1,5 +1,6 @@
 #top {
     background: #f6f6f6;
+    position: relative;
 }
 
 #top .topLine {
@@ -9,7 +10,7 @@
 }
 
 #top .slide {
-    height: 320px;
+    height: 385px;
     background-position: 0 -193px;
     background-repeat: no-repeat;
 } 
@@ -43,4 +44,35 @@
 
 #top .followUs a.github{
     background-position: -734px -566px;
+}
+
+#top .text {
+    position: relative;
+    height: 380px;
+}
+
+#top .text #elephant {
+    width: 425px;
+    height: 425px;
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    background-position: -689px -744px;
+}
+
+#top h1,
+#top h3 {
+    color: #009add;
+}
+
+#top .text #info {
+    position: relative;
+    top: 70px;
+    width: 500px;
+    text-align: center;
+}
+
+#registerRedButton {
+    position: relative;
+    top: 50px;
 }

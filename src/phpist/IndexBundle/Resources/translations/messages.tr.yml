@@ -5,5 +5,12 @@ nav.speakers: 'Konuşmacılar'
 nav.sponsors: 'Sponsorlar'
 nav.venue: 'Ulaşım'
 top.followUs: 'Gelişmeler için bizi takip edin'
-footer.info: 'php-ist Konferansı 2013'
+footer.info: 'php-ist 2013'
 footer.designer: 'Tasarım: %link%'
+slide.main: >
+    Birinci php-ist etkinliğinde php dünyasındaki son gelişmeleri, en yeni teknolojileri konuşuyoruz. Test ve kalite araçlarından frameworklere kadar enine ve boyuna 'PHP' yi tartışmaya seni de bekliyoruz
+Schedule: Konuşma Programı
+Speakers: Konuşmacılar
+Opening Speech: Açılış Konuşması
+Sponsors: Sponsorlar
+Venue: Ulaşım

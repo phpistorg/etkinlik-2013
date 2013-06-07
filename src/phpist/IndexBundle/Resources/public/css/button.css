@@ -22,6 +22,7 @@
     background-image: linear-gradient(to bottom, #F13D62, #C53250);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F13D62, endColorstr=#C53250);
 }
+.redButton:visited,
 .redButton:hover {
     color: #FFF;
     border:1px solid #bb0d31;

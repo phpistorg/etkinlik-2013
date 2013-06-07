@@ -1,0 +1,92 @@
+#speakers {
+    overflow: hidden;
+}
+
+#speakers ul {
+    overflow: auto;
+    width: 1000px;
+}
+
+#speakers ul li {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+#speakers ul li figure{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: block;
+    border:1px solid #FFF;
+    display: block;
+    overflow: hidden;
+    margin-left: 15px;
+    background: #f2f1f8;
+    position: relative;
+}
+
+#speakers ul li figure img{
+    width: 100%;
+}
+
+
+#speakers ul li:hover figure img{
+    display: none;
+}
+
+
+#speakers ul li em{
+    display: block;
+    margin-top: 10px;
+    color: #666666;
+    font-size: 12px;
+}
+
+#speakers ul li strong{
+    color: #d82f52;
+}
+
+#speakers ul li .socialContainer {
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    width: 120px;
+    height: 30px;
+    display: none;
+}
+
+
+#speakers ul li:hover .socialContainer {
+    display: block;
+}
+
+#speakers ul li .socialContainer a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+
+#speakers ul li .socialContainer a.github{
+    background-position: -198px -1342px;
+}
+
+#speakers ul li .socialContainer a.twitter{
+    background-position: -162px -1342px;
+}
+
+#speakers ul li .socialContainer a.web{
+    background-position: -240px -1342px;
+}

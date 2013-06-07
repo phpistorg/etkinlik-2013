@@ -6,50 +6,194 @@
         <div class="topLine sprite"></div>
         <div class="slide sprite">
             <div class="text toCenter">
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                Lorem ipsum falan filan <br/>
-                <a href="#" class="redButton" id="registerredButton">Hemen Kaydol</a>
+                <div id="info">
+                    <h1>{% trans %}PHP KONFERANSI{% endtrans %}</h1>
+                    <h3>{% trans %}6 TEMMUZ - YILDIZ TEKNIK UNIVERSİTESİ{% endtrans %}</h3>
+                    <p>{% trans %}slide.main{% endtrans %}</p>
+                    <a href="#" class="redButton" id="registerRedButton">{% trans %}Register Now{% endtrans %}</a>
+                </div>
+                <i class="sprite" id="elephant"></i>
             </div>
-
-            <img src="#" id="elephant"/>
         </div> <!-- .slide -->
         <div class="followUs">
             {% trans %}top.followUs{% endtrans %}
-            <a href="#" class="ir sprite twitter">Twitter</a> 
-            <a href="#" class="ir sprite facebook">Facebook</a> 
-            <a href="#" class="ir sprite github">Github</a> 
+            <a href="https://twitter.com/phpistorg" class="ir sprite twitter">Twitter</a> 
+            <a href="https://www.facebook.com/groups/istanbul.developers/" class="ir sprite facebook">Facebook</a> 
+            <a href="https://github.com/phpistorg" class="ir sprite github">Github</a> 
         </div> <!-- .followUs -->
     </div> <!-- #top -->
-
-
 {% endblock %}
-
 
 {% block body %}
     <div id="program" class="toCenter">
-        <h2 class="sprite"><span>Konuşma Programı</span></h2>
+        <h2 class="sprite"><span>{% trans %}Schedule{% endtrans %}</span></h2>
+
+        <ul>
+            <li>
+                <small>09:00 - 09:20</small>
+                <h4><em>{% trans %}Opening Speech{% endtrans %}</em></h4>
+                <span>Türker İnce</span>
+            </li>
+
+            <li>
+                <small>09:30 - 10:15</small>
+                <h4><em>{% trans %}PHP Implementations of Design Patterns{% endtrans %}</em></h4>
+                <span>İbrahim Gündüz</span>
+            </li>
+
+            <li>
+                <small>10:30 - 11:15</small>
+                <h4><em>{% trans %}Symfony Framework{% endtrans %}</em></h4>
+                <span>Osman Üngür</span>
+            </li>
+
+            <li class="dummy">
+                <small>11:30 - 12:15</small>
+                <h4><em>?</em></h4>
+                <span></span>
+            </li>
+
+            <li class="lunch">
+                <small>12:30 - 14:00</small>
+                <h4><em>{% trans %}Lunch{% endtrans %}</em></h4>
+            </li>
+
+            <li>
+                <small>14:00 - 14:45</small>
+                <h4><em>{% trans %}PHPUnit{% endtrans %}</em></h4>
+                <span>Mustafa İleri</span>
+            </li>
+
+            <li>
+                <small>15:00 - 15:45</small>
+                <h4><em>{% trans %}PHP Success Stories{% endtrans %}</em></h4>
+                <span>Hüseyin Mert</span>
+            </li>
+
+            <li class="dummy">
+                <small>16:00 - 16:45</small>
+                <h4><em>?</em></h4>
+                <span></span>
+            </li>
+
+            <li class="goygoy">
+                <small>17:00 - 18:45</small>
+                <h4><em>{% trans %}TechTalk{% endtrans %}</em></h4>
+            </li>
+        </ul>
+
     </div> <!-- #program -->
 
 
     <div id="speakers" class="toCenter">
-        <h2 class="sprite"><span>Konuşmacılar</span></h2>
+        <h2 class="sprite"><span>{% trans %}Speakers{% endtrans %}</span></h2>
+
+        <ul>
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>Limango</em>
+                <strong>Türker İnce</strong>
+            </li>
+
+
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>Markafoni</em>
+                <strong>İbrahim Gündüz</strong>
+            </li>
+
+
+
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>Osman Üngür</em>
+                <strong>Limango</strong>
+            </li>
+
+
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>Sonsuzdöngü</em>
+                <strong>Mustafa İleri</strong>
+            </li>
+
+
+
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>XYZ</em>
+                <strong>Hüseyin Mert</strong>
+            </li>
+
+
+            <li>
+                <figure>
+                    <img src="http://startupsteps.dk/uploads/users/dummy.png" alt="Osman Yuksel"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github">Github</a>
+                        <a class="ir sprite twitter">Twitter</a>
+                        <a class="ir sprite web">Web</a>
+                    <div>
+                </figure>
+                <em>XYZ</em>
+                <strong>Ethem Budak</strong>
+            </li>
+
+
+
+
+        </ul>
     </div> <!-- #speakers -->
 
 
     <div id="sponsors" class="toCenter">
-        <h2 class="sprite"><span>Sponsorlar</span></h2>
+        <h2 class="sprite"><span>{% trans %}Sponsors{% endtrans %}</span></h2>
 
         <a href="#" class="redButton" id="howToSponsor">Sponsor Ol</a>
     </div> <!-- #sponsors -->
 
     <div id="contact" class="toCenter">
-        <h2 class="sprite"><span>Ulaşım</span></h2>
+        <h2 class="sprite"><span>{% trans %}Venue{% endtrans %}</span></h2>
+
+        <div id="map">
+            <iframe width="960" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=tr&amp;geocode=CbqPpxNIpaL7FXZgcgIdfae6ASmNmXPorbfKFDEWsW2v-2srFw&amp;q=Yt%C3%BC,+%C4%B0stanbul,+T%C3%BCrkiye&amp;aq=0&amp;oq=yt%C3%BC&amp;sll=41.050717,29.010298&amp;sspn=0.008868,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=Y%C4%B1ld%C4%B1z+Mh.,+Yt%C3%BC,+Be%C5%9Fikta%C5%9F,+T%C3%BCrkiye&amp;t=m&amp;ll=41.071846,29.007683&amp;spn=0.090589,0.329933&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
+            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=tr&amp;geocode=CbqPpxNIpaL7FXZgcgIdfae6ASmNmXPorbfKFDEWsW2v-2srFw&amp;q=Yt%C3%BC,+%C4%B0stanbul,+T%C3%BCrkiye&amp;aq=0&amp;oq=yt%C3%BC&amp;sll=41.050717,29.010298&amp;sspn=0.008868,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=Y%C4%B1ld%C4%B1z+Mh.,+Yt%C3%BC,+Be%C5%9Fikta%C5%9F,+T%C3%BCrkiye&amp;t=m&amp;ll=41.071846,29.007683&amp;spn=0.090589,0.329933&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">Daha Büyük Görüntüle</a></small>
+        </div>
+
     </div> <!-- #contact -->
 {% endblock %}

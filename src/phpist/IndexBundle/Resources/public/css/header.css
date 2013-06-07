@@ -35,6 +35,11 @@ header nav a {
 }
 
 
+
+header nav a:hover {
+    color: #00a1de;
+}
+
 header nav a.active {
     border-top: 12px solid #00a1de;
 }
