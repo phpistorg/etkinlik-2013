@@ -1,0 +1,31 @@
+#devpod {
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+
+#devpod .devpodContainer {
+    width: 550px;
+    margin: 0 auto;
+}
+
+
+#devpod .devpodContainer .devpodText,
+#devpod .devpodContainer img {
+    float: left;
+}
+
+
+#devpod .devpodContainer .devpodText {
+    margin-left: 20px;
+}
+
+
+#devpod .devpodContainer .devpodText h5{
+    font-weight: normal;
+}
+
+
+#devpod .devpodContainer .devpodText a{
+    color: #0082b4;
+}
