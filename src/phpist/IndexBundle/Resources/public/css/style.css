@@ -48,3 +48,8 @@ footer {
 .notFound {
     text-align: center;
 }
+
+#venue p {
+    margin: 20px;
+    text-align: center;
+}
