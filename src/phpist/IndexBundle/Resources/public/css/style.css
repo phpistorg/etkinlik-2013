@@ -49,7 +49,7 @@ footer {
     text-align: center;
 }
 
-#venue p {
+#venue > p {
     margin: 20px;
     text-align: center;
 }
