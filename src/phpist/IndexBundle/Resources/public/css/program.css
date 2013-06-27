@@ -25,6 +25,7 @@
     position: absolute;
     bottom: 15px;
     right: 15px;
+    text-align: right;
 }
 
 
@@ -64,4 +65,14 @@
 #program ul li.lunch small {
     top: 3px;
     left: 320px;
+}
+
+
+#program ul li.small {
+    width: 142px;
+}
+
+
+#program ul li.small h4 {
+    width: 142px;
 }
