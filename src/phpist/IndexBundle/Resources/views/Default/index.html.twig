@@ -100,11 +100,7 @@
                 <a href="http://www.shiftdelete.net" target="_blank"><img src="{{ asset('bundles/phpistindex/img/sponsors/sdn.png') }}" alt="SDN"/></a>
             </li>
 
-
-
-
             <li>
-                
                 {% if app.request.locale == "tr" %}
                 <a href="{{ asset('bundles/phpistindex/data/sponsorluk.pdf') }}"><img src="{{ asset('bundles/phpistindex/img/plus.png') }}" alt="Sponsor Olun"/></a>
                 {% else %}
@@ -171,8 +167,8 @@
 
             <li class="dummy small">
                 <small>16:00 - 16:45</small>
-                <h4><em>?</em></h4>
-                <span></span>
+                <h4><em>{% trans %}Debugging On PHP{% endtrans %}</em></h4>
+                <span>Volkan Altan</span>
             </li>
 
             <li class="goygoy small">
@@ -241,7 +237,6 @@
                 <strong>Mustafa İleri</strong>
             </li>
 
-
             <li>
                 <figure>
                     <img src="{{ asset('bundles/phpistindex/img/speakers/huseyin_mert.png') }}" alt="Hüseyin Mert"/>
@@ -254,7 +249,6 @@
                 <em>Eğitim Bilişim Ağı</em>
                 <strong>Hüseyin Mert</strong>
             </li>
-
 
             <li>
                 <figure>
@@ -269,7 +263,18 @@
                 <strong>Adil İlhan</strong>
             </li>
 
-
+            <li>
+                <figure>
+                    <img src="{{ asset('bundles/phpistindex/img/speakers/volkan.jpg') }}" alt="Volkan Altan"/>
+                    <div class="socialContainer">
+                        <a class="ir sprite github" href="https://github.com/volkan/" target="_blank">Github</a>
+                        <a class="ir sprite twitter" href="https://twitter.com/volkanaltan" target="_blank">Twitter</a>
+                        <a class="ir sprite web" href="http://volkanaltan.blogspot.com/" target="_blank">Web</a>
+                    </div>
+                </figure>
+                <em>Vitringez</em>
+                <strong>Volkan Altan</strong>
+            </li>
         </ul>
     </div> <!-- #speakers -->
 
