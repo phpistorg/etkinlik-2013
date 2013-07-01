@@ -50,5 +50,9 @@
     max-width: 125px;
 }
 
-
+.taMiddle{
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
 
