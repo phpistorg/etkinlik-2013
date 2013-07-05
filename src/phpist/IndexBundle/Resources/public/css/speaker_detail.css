@@ -1,0 +1,78 @@
+.speaker{
+	margin-top: 15px;
+}
+
+.speaker .photo{
+	float: left;
+	width: 180px;
+}
+
+.speaker img{
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.speaker .information{
+	float:left;
+	width: 770px;
+}
+
+
+.speaker .information .name{
+	float:left;
+	width: 500px;
+}
+
+.speaker .information .social{
+	float:left;
+	text-align: right;
+	max-width: 270px;
+	width: 270px;
+}
+
+.speaker .information .row1{
+	margin-top: 50px;
+}
+
+.speaker .information .row1 .name{
+	font-weight:bold;
+	font-size:19px;
+}
+
+.speaker .information .row1 .company{
+	font-style:italic;
+	color:#999;
+	padding:5px;
+}
+
+.speaker .information .row2 .ln{
+	background:#aaaaaa;
+	height: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px; 
+}
+
+.speaker .information .row3 .slideName{
+	font-size:16px;
+	font-weight:bold;
+}
+.box{
+	margin-top:10px;
+	background-color: #fff;
+	border:1px solid #f0f0f0;
+}
+
+.box .slide{
+	padding: 20px;
+}
+
+.box .comment{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.clear{
+	clear:both;	
+}
