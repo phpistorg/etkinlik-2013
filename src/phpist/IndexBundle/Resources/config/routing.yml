@@ -5,3 +5,7 @@ phpist_index_homepage:
 phpist_index_homepage_eng:
     pattern:  /en
     defaults: { _controller: phpistIndexBundle:Default:index, _locale: en }
+
+phpist_show_speaker:
+    pattern:  /konusmaci/{speakerName}
+    defaults: { _controller: phpistIndexBundle:Default:speaker, _locale:tr }

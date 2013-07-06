@@ -57,6 +57,18 @@
     color: #d82f52;
 }
 
+#speakers ul li strong a{
+    color: #d82f52;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#speakers ul li strong a:hover{
+    color: #343434;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #speakers ul li .socialContainer {
     position: absolute;
     top: 45px;

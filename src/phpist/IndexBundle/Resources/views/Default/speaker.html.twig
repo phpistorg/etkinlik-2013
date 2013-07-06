@@ -1,0 +1,72 @@
+{% extends "phpistIndexBundle::layout.html.twig" %}
+
+
+{% block top %}
+    <div id="top">
+        <div class="topLine sprite"></div>
+        <div class="toCenter">
+            <div class="speaker">
+                <div class="photo">
+                    <img src="{{ asset('bundles/phpistindex/img/speakers/') }}{{ speaker.photo }}" width="170" height="170" />   
+                </div>
+                <div class="information">
+                    <div class="row1">
+                        <div class="name">{{ speaker.name}} <span class="company">({{ speaker.companyName }})</span></div>
+                        <div class="social">
+                            {% if speaker.facebook is not empty %}
+                                <a href="{{ speaker.facebook }}" title="{{ speaker.name}} Facebook"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/face-ico.jpg') }}" width="26" height="25" /></a>
+                            {% endif %}
+                            {% if speaker.twitter is not empty %}
+                                <a href="{{ speaker.twitter }}" title="{{ speaker.name}} Twitter"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/twit-ico.jpg') }}" width="26" height="25" /></a>
+                            {% endif %}
+                            {% if speaker.blog is not empty %}
+                                <a href="{{ speaker.blog }}" title="{{ speaker.name}} Blog"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/blog-ico.jpg') }}" width="26" height="25" /></a>
+                            {% endif %}
+                            {% if speaker.github is not empty %}
+                                <a href="{{ speaker.github }}" title="{{ speaker.name }} Github"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/git-ico.jpg') }}" width="26" height="25" /></a>
+                            {% endif %}
+                            {% if speaker.linkedin is not empty %}
+                                <a href="{{ speaker.linkedin }}" title="{{ speaker.name}} Linkedin"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/in-ico.jpg') }}" width="26" height="25" /></a>
+                            {% endif %}
+                            {% if speaker.email %}
+                                <a href="{{ speaker.email }}" title="{{ speaker.name}} Email"><img src="{{ asset('bundles/phpistindex/img/speaker_detail/mail-ico.jpg') }}" width="26" height="25" />
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="row2">
+                        <div class="ln"></div>
+                    </div>
+                    <div class="row3">
+                        <div class="slideName">{{ speaker.slideName }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+            {% if speaker.slideUrl is not empty %}
+            <div class="box centerTo" style="height:600px; text-align:center;">
+                <h2 class="sprite"><span>{% trans %}Sunum{% endtrans %}</span></h2>
+                <div class="slide" style="margin-left:auto; margin-right:auto;">
+                    <iframe src="{{ speaker.slideUrl }}" width="800" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:25px"></div>
+                </div>
+            </div>
+            {% endif %}
+            <div class="box centerTo">
+                 <h2 class="sprite"><span>{% trans %}Yorum Ekle{% endtrans %}</span></h2>
+                 <div class="comment">
+                    <div class="fb-comments" data-href="{{ app.request.getUriForPath(app.request.pathInfo) }}" data-width="800" data-num-posts="20"></div>
+                 </div>
+            </div>
+        </div>
+    </div> <!-- #top -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=195081970651743";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endblock %}

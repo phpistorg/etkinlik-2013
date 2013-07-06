@@ -1,6 +1,7 @@
 {% extends "phpistIndexBundle::layout.html.twig" %}
 
 
+
 {% block top %}
     <div id="top">
         <div class="topLine sprite"></div>
@@ -184,97 +185,20 @@
         <h2 class="sprite"><span>{% trans %}Speakers{% endtrans %}</span></h2>
 
         <ul>
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/turker_ince.jpg') }}" alt="Türker İnce"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/turkerince" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/turkerince" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="https://www.facebook.com/trkrnc" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Limango</em>
-                <strong>Türker İnce</strong>
-            </li>
-
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/ibrahim_gunduz.jpg') }}" alt="İbrahim Gündüz"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/ibrahimgunduz34" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/ibrahimgunduz34" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://ibrahimgunduz.net/" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Markafoni</em>
-                <strong>İbrahim Gündüz</strong>
-            </li>
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/osman_ungur.jpg') }}" alt="Osman Üngür"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/import" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/osmanung" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://osman.ungur.org/" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Limango</em>
-                <strong>Osman Üngür</strong>
-            </li>
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/mustafa_ileri.jpg') }}" alt="Mustafa İleri"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/mustafaileri" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/mustafaileri" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://sonsuzdongu.com/blog" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Sonsuzdöngü</em>
-                <strong>Mustafa İleri</strong>
-            </li>
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/huseyin_mert.png') }}" alt="Hüseyin Mert"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/hmert" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/hmert" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://hmert.com/" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Eğitim Bilişim Ağı</em>
-                <strong>Hüseyin Mert</strong>
-            </li>
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/adil.jpg') }}" alt="Adil İlhan"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/adililhan" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/adil_ilhan" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://www.adililhan.com/" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Özgür Yazılım A.Ş.</em>
-                <strong>Adil İlhan</strong>
-            </li>
-
-            <li>
-                <figure>
-                    <img src="{{ asset('bundles/phpistindex/img/speakers/volkan.jpg') }}" alt="Volkan Altan"/>
-                    <div class="socialContainer">
-                        <a class="ir sprite github" href="https://github.com/volkan/" target="_blank">Github</a>
-                        <a class="ir sprite twitter" href="https://twitter.com/volkanaltan" target="_blank">Twitter</a>
-                        <a class="ir sprite web" href="http://volkanaltan.blogspot.com/" target="_blank">Web</a>
-                    </div>
-                </figure>
-                <em>Vitringez</em>
-                <strong>Volkan Altan</strong>
-            </li>
+            {% for speaker in speakers %}
+                <li>
+                    <figure>
+                        <img src="{{ asset('bundles/phpistindex/img/speakers/') }}{{ speaker.photo }}" alt="{{ speaker.name }}"/>
+                        <div class="socialContainer">
+                            <a class="ir sprite github" href="{{ speaker.github }}" target="_blank">Github</a>
+                            <a class="ir sprite twitter" href="{{ speaker.twitter }}" target="_blank">Twitter</a>
+                            <a class="ir sprite web" href="{% if speaker.blog is empty %}{{ speaker.facebook }} {% else %} {{ speaker.blog }} {% endif %}" target="_blank">Web</a>
+                        </div>
+                    </figure>
+                    <em>Limango</em>
+                    <strong><a href="{{ path('phpist_show_speaker', {'speakerName': speaker.slug}) }}">{{ speaker.name }}</a></strong>
+                </li>
+            {% endfor %}
         </ul>
     </div> <!-- #speakers -->
 
