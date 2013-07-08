@@ -54,8 +54,16 @@
 }
 
 .speaker .information .row3 .slideName{
-	font-size:16px;
-	font-weight:bold;
+    float:left;
+    width: 400px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.speaker .information .row3 .iLikeThat{
+    float:left;
+    text-align: right;
+    width: 369px;
 }
 .box{
 	margin-top:10px;
