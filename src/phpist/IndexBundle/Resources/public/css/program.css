@@ -8,7 +8,7 @@
 }
 
 #program ul li {
-    width: 190px;
+    width: 188px;
     height: 190px;
     padding: 15px;
     margin-right: 25px;
@@ -17,8 +17,29 @@
     float: left;
     position: relative;
     border-radius: 5px;
+    border:1px solid #FFF;
     overflow: hidden;
 }
+
+
+#program ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    height: 100%;
+}
+
+
+
+#program ul li:hover {
+    border: 1px dashed #000;
+}
+
+#program ul li.dummyLink:hover {
+    border: 1px solid #FFF;
+}
+
 
 
 #program ul li span {
@@ -47,7 +68,7 @@
 }
 
 #program ul li.lunch{
-    width: 960px;
+    width: 925px;
     height: 20px;
 }
 
@@ -69,7 +90,7 @@
 
 
 #program ul li.small {
-    width: 142px;
+    width: 139px;
 }
 
 
