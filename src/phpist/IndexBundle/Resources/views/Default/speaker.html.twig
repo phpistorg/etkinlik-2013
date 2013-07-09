@@ -39,6 +39,7 @@
                     </div>
                     <div class="row3">
                         <div class="slideName">{{ speaker.slideName }}</div>
+                        <div class="iLikeThat"><div class="fb-like" data-href="{{ app.request.getUriForPath(app.request.pathInfo) }}" data-send="true" data-layout="box_count" data-width="250" data-show-faces="false" data-font="tahoma"></div></div>
                     </div>
                 </div>
             </div>
@@ -61,6 +62,16 @@
         </div>
     </div> <!-- #top -->
 
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=195081970651743";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
