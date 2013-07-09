@@ -209,7 +209,7 @@
                             <a class="ir sprite web" href="{% if speaker.blog is empty %}{{ speaker.facebook }} {% else %} {{ speaker.blog }} {% endif %}" target="_blank">Web</a>
                         </div>
                     </figure>
-                    <em>Limango</em>
+                    <em>{{ speaker.companyName }}</em>
                     <strong><a href="{{ path('phpist_show_speaker', {'speakerName': speaker.slug}) }}">{{ speaker.name }}</a></strong>
                 </li>
             {% endfor %}
