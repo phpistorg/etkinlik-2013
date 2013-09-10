@@ -1,0 +1,7 @@
+parameters:
+#    php_work_shop.example.class: Php\WorkShopBundle\Example
+
+services:
+#    php_work_shop.example:
+#        class: %php_work_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

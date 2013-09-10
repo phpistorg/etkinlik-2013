@@ -1,0 +1,3 @@
+php_work_shop_homepage:
+    pattern:  /workshop/eylul-2013
+    defaults: { _controller: PhpWorkShopBundle:Default:index }

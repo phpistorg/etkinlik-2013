@@ -1,3 +1,7 @@
+php_work_shop:
+    resource: "@PhpWorkShopBundle/Resources/config/routing.yml"
+    prefix:   /
+
 phpist_index:
     resource: "@phpistIndexBundle/Resources/config/routing.yml"
     prefix:   /

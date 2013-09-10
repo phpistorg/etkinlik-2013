@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>php-ist</title>
+    <link href="{{ asset('bundles/phpworkshop/css/style.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('bundles/phpworkshop/js/jquery-1.10.1.min.js') }}"></script>
+    <script src="{{ asset('bundles/phpworkshop/js/jquery.pagescroller.lite.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#main').pageScroller({
+                navigation: '#navigation',
+                scrollOffset: 0,
+                animationType: 'easeInOutExpo'
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="navigation">
+    <ul class="menu">
+        <li><a href="#">Bilet</a></li>
+        <li><a href="#">Konu</a></li>
+        <li><a href="#">Konuşmacı</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Mekan</a></li>
+    </ul>
+</div>
+<div id="clear"></div>
+<div id="main">
+    <div style="height:480px;background-image:url({{ asset('bundles/phpworkshop/img/ari3.jpg') }});background-repeat:no-repeat;background-position:center bottom -80px;padding-top:20px;">
+        <div style="width:300px;font-size:64px;padding:20px;margin:auto;color:#fff;background-color:#0099cc;text-align:center;">php-ist<br />workshop</div>
+        <div style="width:300px;font-size:34px;padding:20px;margin:auto;color:#fff;background-color:#ff3366;text-align:center;">28.09.2013</div>
+    </div>
+    <div id="footer">
+        Gelişmeler için bizi takip edin<a href="https://www.facebook.com/groups/istanbul.developers/" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/facebook.png') }}" width="32" height="32" hspace="10" style="vertical-align:bottom;" /></a><a href="https://twitter.com/phpistorg" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/twitter.png') }}" width="32" height="32" hspace="10" style="vertical-align:bottom;" /></a><a href="https://github.com/phpistorg" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/github.png') }}" width="32" height="32" hspace="10" style="vertical-align:bottom;" /></a>
+    </div>
+    <div class="section" style="height:200px;padding-top:140px;">
+        <div style="width:200px;font-size:34px;padding:20px;margin:auto;background-color:#ff3366;text-align:center;"><a href="https://phpist-atolye1.eventbrite.com/" target="_blank" style="color:#fff;">Biletini hemen al!</a></div>
+    </div>
+    <div class="section" style="height:500px;padding-top:50px;text-align:center;font-size:24px;color:#999;line-height:40px;">
+        Solr nedir?<br />
+        Neden ihtiyaç duyuyoruz?<br />
+        Ayarları nasıl yapılır?<br />
+        Özellikleri nelerdir?<br />
+        Arama örnekleri.<br />
+        Öneri yapma özelliği.<br />
+        Aranan kelimelerin renklendirilmesi.<br />
+        Kelime yönlendirme.<br />
+        Belirli ürünleri öne çıkarılması (boost)
+    </div>
+    <div class="section" style="text-align:center;font-size:44px;color:#000;line-height:100px;">
+        <img src="{{ asset('bundles/phpworkshop/img/volkan.jpg') }}" width="170" height="170" style="border-radius:80px;" /><br />Volkan Altan<br /><a href="https://twitter.com/volkanaltan" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/twitter.png') }}" width="64" height="64" hspace="10" /></a><a href="https://github.com/volkan" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/github.png') }}" width="64" height="64" hspace="10" /></a><a href="http://volkanaltan.blogspot.com/" target="_blank"><img src="{{ asset('bundles/phpworkshop/img/blogger.png') }}" width="64" height="64" hspace="10" /></a>
+    </div>
+    <div class="section" style="height:650px;padding-top:150px;text-align:center;font-size:24px;color:#999;line-height:40px;">
+        12:00-12:15<br />Acılış konuşması<br /><br />
+        12:15-13:00<br />İlk oturum<br /><br />
+        13:00-14:00<br />Yemek / Sohbet<br /><br />
+        14:00-15:00<br />İkinci oturum<br /><br />
+        15:00-17:00<br />Sohbet / Tech talk
+    </div>
+    <div class="section" style="height:900px;padding-top:50px;text-align:center;font-size:24px;color:#999;line-height:40px;">
+        ARI 3 Binası<br />
+        Koru Yolu<br />
+        İ.T.Ü. Ayazağa Kampüsü<br />
+        Maslak/ İSTANBUL<br />
+        Tel: +90 (212) 285 45 79-80<br /><br />
+        <iframe width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=41.104304,29.025707&amp;spn=0.015085,0.024869&amp;t=h&amp;z=16&amp;output=embed"></iframe>
+    </div>
+</div>
+<div id="footer">
+    <a href="http://www.ertuzun.net" target="_blank" style="color:#FFF;">Tasarım</a>
+</div>
+</body>
+</html>
