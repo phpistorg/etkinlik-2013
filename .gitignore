@@ -11,3 +11,5 @@
 *.swo
 *.swn
 .idea/
+app/SymfonyRequirements.php
+compose*
